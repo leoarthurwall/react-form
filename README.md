@@ -15,7 +15,7 @@ Also, you will be prompted with a success message if you fill out all the input 
 - css styling: box shadow, first child, placeholder styling
 - useState()
 - ternary operators with state (conditional rendering of jsx)
-- spread operator (!)
+- spread operator (...)
 - form element
 - event handlers: onSubmit, onChange
 - logical "not" operator (!)

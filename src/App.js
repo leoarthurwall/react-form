@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div className="app">
-      <div className="form-container" onSubmit={handleSubmit}>
+      <form className="form-container" onSubmit={handleSubmit}>
         {submitted ? (
           <div className="success-message">Success! Thanks for registering</div>
         ) : null}
@@ -59,7 +59,7 @@ function App() {
         <span className="input-warning">Please enter your email address</span>
 
         <button className="register-button">Register</button>
-      </div>
+      </form>
     </div>
   );
 }

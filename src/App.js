@@ -39,7 +39,7 @@ function App() {
           placeholder="First Name"
           name="firstName"
         />
-        <span className="input-warning">Please enter your first name</span>
+        {submitted && !values.firstName ? <span className="input-warning">Please enter your first name</span> : null}
         <input
           onChange={handleChangeLastNameInput}
           value={values.lastName}
@@ -47,7 +47,7 @@ function App() {
           placeholder="Last Name"
           name="lastName"
         />
-        <span className="input-warning">Please enter your last name</span>
+        {submitted && !values.lastName ? <span className="input-warning">Please enter your last name</span> : null}
 
         <input
           onChange={handleChangeEmailInput}
@@ -56,7 +56,7 @@ function App() {
           placeholder="Email"
           name="Email"
         />
-        <span className="input-warning">Please enter your email address</span>
+        {submitted && !values.email ? <span className="input-warning">Please enter your email address</span> : null}
 
         <button className="register-button">Register</button>
       </form>

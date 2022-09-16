@@ -9,6 +9,8 @@ function App() {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  
+  const [valid, setValid] = useState(false)
 
   const handleChangeFirstNameInput = (event) => {
     //update values state, take copy of values(spread operator) object, change firstname of copy
@@ -23,13 +25,16 @@ function App() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    if(values.firstName && values.lastName && values.email){
+      setValid(true)
+    }
     setSubmitted(true);
   };
 
   return (
     <div className="app">
       <form className="form-container" onSubmit={handleSubmit}>
-        {submitted ? (
+        {submitted && valid ? (
           <div className="success-message">Success! Thanks for registering</div>
         ) : null}
         <input

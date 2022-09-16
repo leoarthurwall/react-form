@@ -42,3 +42,12 @@ body {
   border: none;
   cursor: pointer;
 }
+
+.success-message {
+  font-size: 0.8rem;
+  background-color: rgb(1, 173, 1);
+  color: white;
+  padding:0.6rem;
+  width:200px;
+  text-align: left;
+}

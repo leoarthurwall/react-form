@@ -2,3 +2,40 @@ body {
   font-family: sans-serif;
   text-align: center;
 }
+.app{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(182, 251, 251);
+}
+.form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  height: auto;
+  width: auto;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.form-field{
+  padding: 0.6rem;
+  width: 200px;
+  background-color: rgb(240, 240, 240);
+  border: none;
+}
+
+.register-button{
+  width:220px;
+  padding: 0.6rem;
+  background-color: rgb(119, 119, 229);
+  color: white;
+  border: none;
+  cursor: pointer;
+
+}

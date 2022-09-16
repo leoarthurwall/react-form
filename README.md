@@ -1,7 +1,7 @@
 # THE REACT FORM
-![cover image](images/coverImage.jpg)
-
 Welcome to the react form. A simple form where you can enter your first name, last name, and email address and then submit.
+
+![cover image](images/coverImage.jpg)
 
 You will be prompted with a warning message if you submit without filling out one of the input fields.
 

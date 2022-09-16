@@ -21,11 +21,10 @@ function App() {
     setValues({ ...values, email: event.target.value });
   };
 
-
   const handleSubmit = (event) => {
     event.preventDefault();
     setSubmitted(true);
-  }
+  };
 
   return (
     <div className="app">
@@ -40,6 +39,7 @@ function App() {
           placeholder="First Name"
           name="firstName"
         />
+        <span className="input-warning">Please enter your first name</span>
         <input
           onChange={handleChangeLastNameInput}
           value={values.lastName}
@@ -47,6 +47,8 @@ function App() {
           placeholder="Last Name"
           name="lastName"
         />
+        <span className="input-warning">Please enter your last name</span>
+
         <input
           onChange={handleChangeEmailInput}
           value={values.email}
@@ -54,6 +56,8 @@ function App() {
           placeholder="Email"
           name="Email"
         />
+        <span className="input-warning">Please enter your email address</span>
+
         <button className="register-button">Register</button>
       </div>
     </div>

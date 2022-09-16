@@ -17,7 +17,7 @@ body {
 
   height: auto;
   width: auto;
-  gap: 1rem;
+  /* gap: 1rem; */
   padding: 1rem;
   background-color: white;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
@@ -28,6 +28,11 @@ body {
   width: 200px;
   background-color: rgb(240, 240, 240);
   border: none;
+  margin-top: 1rem;
+}
+.form-field:first-child{
+  margin-top: 0rem;
+
 }
 
 ::-webkit-input-placeholder {
@@ -41,6 +46,7 @@ body {
   color: white;
   border: none;
   cursor: pointer;
+  margin-top: 1rem;
 }
 
 .success-message {
@@ -50,4 +56,13 @@ body {
   padding:0.6rem;
   width:200px;
   text-align: left;
+}
+
+.input-warning {
+  font-size: 0.7rem;
+  color: rgb(149, 2, 2);
+  text-align: left;
+  width: 220px;
+  padding-top: 0.3rem;
+
 }
